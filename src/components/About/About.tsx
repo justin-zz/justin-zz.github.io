@@ -43,7 +43,7 @@ const About: FC = () => {
                                         Hi, I'm Justin and I'm a master's
                                         student at the{' '}
                                         <b>University of Toronto</b> with a
-                                        passion for <b>Robotics</b>.
+                                        passion for <b>Robotics</b> and <b>Artificial Intelligence</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -71,24 +71,24 @@ const About: FC = () => {
                                          {' '}
                                         <b>
                                             University of Ottawa
-                                        </b>{' '}
+                                        </b>{' '}.
                                     </Text>
                                 </Flex>
                             </Fade>
                             <Fade bottom cascade duration={500}>
                                 <Flex>
-                                    <Center p={4}>👨🏻‍💻</Center>
+                                    <Center p={4}>🦾</Center>
                                     <Text>
-                                        I have experience as a software developer in <b>University of Ottawa</b>'s <b>Mars Rover Team (uORover)</b> where I was responsible for the robotic arm's competition-ready kinematics.
-                                        On my free time I like to indulge in my projects (see below).
+                                        I have experience with software development from <b>University of Ottawa</b>'s <b>Mars Rover Team (uORover)</b> where I was responsible for the robotic arm's competition-ready kinematics.
+                                        On my free time I like to indulge in my projects spanning from robotics to machine learning (see below).
                                     </Text>
                                 </Flex>
                             </Fade>
                             <Fade bottom cascade duration={500}>
                                 <Flex>
-                                    <Center p={4}>🚀</Center>
+                                    <Center p={4}>🖥️</Center>
                                     <Text>
-                                        I'm experienced in full-stack web and app
+                                        I also have experience doing full-stack web and app
                                         development - particularly with{' '}
                                         <b>Typescript</b>, <b>Android Studio</b> and <b>Python</b>.{' '}
                                         <b>ReactJS/NextJS</b> is my frontend framework
@@ -100,11 +100,11 @@ const About: FC = () => {
                             </Fade>
                             <Fade bottom cascade duration={500}>
                                 <Flex>
-                                    <Center p={4}>🧠</Center>
+                                    <Center p={4}>🏞️</Center>
                                     <Text>
-                                        In addition to Robotics, I
-                                        am also interested in the confluence of
-                                        artificial intelligence, bodybuilding and rock climbing!
+                                        In addition to robotics and academics, I
+                                        am also an avid participant in the confluence of  
+                                        <b> bodybuilding</b> and <b>bouldering</b>!
                                     </Text>
                                 </Flex>
                             </Fade>

@@ -85,7 +85,7 @@ const ProjectCard: FC<ProjectCardProps> = props => {
                 <Text color={'gray.500'}>{props.description}</Text>
                 <Box>
                     <Link
-                        href={`${props.id}`}
+                        href={`${props.headerLink}`}
                         _hover={{
                             textDecor: 'none',
                         }}

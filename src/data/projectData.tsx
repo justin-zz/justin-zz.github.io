@@ -8,7 +8,7 @@ import {
     MLBadge,
     FFmpegBadge,
     MiditonesBadge,
-    
+
 } from '../components/Projects/TechBadges'
 import { FiFileText, FiGithub, FiGitlab, FiLink, FiYoutube } from 'react-icons/fi'
 import { ProjectT } from './types'
@@ -27,7 +27,7 @@ export const projectData: ProjectT[] = [
         ],
         imageSrc: '/tg001.png',
         description:
-            'The soon-to-be tiniest budget-friendly and open-source robot. Intended to be a learning resource where anyone can get into robotics by building this robot! Read the devlog by clicking on the icon!',
+            'The soon-to-be tiniest budget-friendly robot. Intended to be an open-source learning resource where anyone can get into robotics by building this robot! Read the Notion devlog below!.',
         links: [
             {
                 link: 'https://www.notion.so/justin-portfolio/Robot-Development-Document-RDD-TG-001-Tiny-Gladiator-001-237687afd29480408cbad320aca8db6c?source=copy_link',
@@ -39,7 +39,7 @@ export const projectData: ProjectT[] = [
     {
         name: 'Robotic Arm Kinematics',
         id: 'kinematics',
-        type: 'Robot',
+        type: 'Kinematics',
         tagline: 'Software responsible for the robotic arm on the uOttawa Mars Rover',
         tags: [
             <ROSBadge />,
@@ -48,7 +48,7 @@ export const projectData: ProjectT[] = [
         ],
         imageSrc: '/kinematics.png',
         description:
-            'The code that moves the uOttawa robotic arm to this day! Including open and close-loop (IK) control. Click the image to watch our System Acceptance Review (SAR) 2024 video!. See the "arm" and "robotic_arm_controls" folders in the repo for more information.',
+            'The code that moves uOttawa\'s 6 DoF robotic arm to this day! Including open and close-loop (IK) control. Click the YouTube icon to watch our System Acceptance Review (SAR) 2024 video!. Click the GitLab icon and see "arm" and "robotic_arm_controls" folders in the repo for more information on the code.',
         links: [
              {
                  link: 'https://gitlab.com/uorover/rover_workspace/-/tree/ros2-testing/src?ref_type=heads',
@@ -64,7 +64,7 @@ export const projectData: ProjectT[] = [
     {
         name: 'Robotic Arm Player (RAP)',
         id: 'rap',
-        type: 'Robot',
+        type: 'Kinematics',
         tagline: 'Play your favorite music on a robotic arm',
         tags: [
             <ROSBadge />, 
@@ -75,11 +75,15 @@ export const projectData: ProjectT[] = [
         ],
         imageSrc: '/rap.png',
         description:
-            'Downloads audio from YouTube/Twitch and plays it on a robotic arm. Watch the cool video in the repo below!',
+            'Downloads audio from YouTube/Twitch and plays it on a robotic arm. Watch the cool demo video by clicking on the YouTube icon above!',
         links: [
             {
                 link: 'https://github.com/justin-zz/robotic-arm-player',
                 icon: <FiGithub />,
+            },
+            {
+                link: 'https://www.youtube.com/watch?v=fO1SlkeHADE',
+                icon: <FiYoutube />,
             },
         ],
         headerLink: 'https://github.com/justin-zz/robotic-arm-player',
@@ -87,14 +91,14 @@ export const projectData: ProjectT[] = [
     {
         name: 'ESP32 Vision',
         id: 'espvision',
-        type: 'Machine Learning',
+        type: 'Robotic Perception',
         tagline: 'Cutting-edge research allowing real-time depth perception on teeny tiny edge devices',
         tags: [
             <PythonBadge />,
             <EmbeddedBadge />,
             <MLBadge />,
         ],
-        imageSrc: '/espvision.jpg',
+        imageSrc: '/espvision.png',
         description:
             'A framework for deploying real-time depth perception on resource-constrained microcontrollers, specifically the ESP32-CAM with only 512KB RAM.',
         links: [
@@ -114,9 +118,9 @@ export const projectData: ProjectT[] = [
             <PythonBadge />,
             <MLBadge />,
         ],
-        imageSrc: '/histo.jpg',
+        imageSrc: '/histo.png',
         description:
-            'This repository implements an Attention-Based Multiple Instance Learning (ABMIL) model for histopathology whole slide image (WSI) classification. The model processes image patches and aggregates them with attention mechanisms for slide-level predictions.',
+            'An Attention-Based Multiple Instance Learning (ABMIL) model for histopathology whole slide image (WSI) classification. The model processes image patches and aggregates them with attention mechanisms for slide-level predictions.',
         links: [
             {
                 link: 'https://github.com/justin-zz/ECE1512-Project-B',

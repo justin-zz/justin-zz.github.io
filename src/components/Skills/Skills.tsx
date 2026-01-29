@@ -38,6 +38,14 @@ import {
     SiStorybook,
     SiGraphql,
     SiNextdotjs,
+    SiRos,
+    SiAndroidstudio,
+    SiR,
+    SiCloudsmith,
+    SiArduino,
+    SiOpencv,
+    SiPytorch,
+    SiTensorflow,
 } from 'react-icons/si'
 import { Element } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
@@ -69,9 +77,9 @@ const Skills: FC = () => {
                                 align={'flex-start'}
                             >
                                 <SkillSection title={'Languages'}>
-                                    <SkillItem icon={SiJava} name='Java' />
                                     <SkillItem icon={SiPython} name='Python' />
-                                    <SkillItem icon={SiPython} name='C/C++' />
+                                    <SkillItem icon={SiJava} name='Java' />
+                                    <SkillItem icon={SiC} name='C/C++' />
                                     <SkillItem
                                         icon={SiTypescript}
                                         name='Typescript'
@@ -81,10 +89,11 @@ const Skills: FC = () => {
                                     <SkillItem icon={SiGo} name='Golang' />
                                 </SkillSection>
                                 <SkillSection title={'Frameworks'}>
-                                    <SkillItem icon={SiReact} name='ROS' />
-                                    <SkillItem icon={SiReact} name='Android Studio' />
+                                    <SkillItem icon={SiRos} name='ROS' />
+                                    <SkillItem icon={SiOpencv} name='OpenCV' />
+                                    <SkillItem icon={SiPytorch} name='Pytorch' />
+                                    <SkillItem icon={SiTensorflow} name='TensorFlow' />
                                     <SkillItem icon={SiReact} name='ReactJS' />
-                                    <SkillItem icon={SiNextdotjs} name='NextJS' />
                                     <SkillItem
                                         icon={SiNodedotjs}
                                         name='NodeJS'
@@ -121,12 +130,17 @@ const Skills: FC = () => {
                                     />
                                 </SkillSection>
                                 <SkillSection title={'Other tools'}>
-                                    <SkillItem icon={SiGit} name='Git' />
-                                    <SkillItem icon={SiLatex} name='LaTeX' />
                                     <SkillItem
                                         icon={SiVisualstudiocode}
                                         name='VS Code'
                                     />
+                                    <SkillItem icon={SiFirebase} name='Solidworks' />
+                                    <SkillItem icon={SiFirebase} name='KiCad' />
+                                    <SkillItem icon={SiArduino} name='Arduino' />
+                                    <SkillItem icon={SiAndroidstudio} name='Android Studio' />
+                                    <SkillItem icon={SiGit} name='Git' />
+                                    <SkillItem icon={SiLatex} name='LaTeX' />
+                                    <SkillItem icon={SiR} name='R' />
                                 </SkillSection>
                             </Stack>
                         </Card>

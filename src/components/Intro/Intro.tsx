@@ -30,7 +30,7 @@ const Intro: FC = () => {
                         textAlign='center'
                     >
                         <ReactTypingEffect
-                            text='Jason Wang'
+                            text='Justin Zhang'
                             speed={85}
                             eraseDelay={1000000}
                             typingDelay={650}
@@ -50,8 +50,8 @@ const Intro: FC = () => {
                             textAlign='center'
                             letterSpacing={1.1}
                         >
-                            Computer Science + Cognitive Science @ University of
-                            Toronto '26
+                            Electrical and Computer Engineering @ University of
+                            Toronto '27
                         </Text>
                         <Box p={4}>
                             <Socials
@@ -59,6 +59,8 @@ const Intro: FC = () => {
                             />
                         </Box>
                     </Fade>
+                    {/*
+                    
                     <Link
                         href={'/Resume_Jason_Wang.pdf'}
                         isExternal
@@ -83,6 +85,8 @@ const Intro: FC = () => {
                             Resume
                         </Button>
                     </Link>
+                    */}
+                    
                 </VStack>
                 <Box mt={[10, '10vh']}>
                     <DownArrow />

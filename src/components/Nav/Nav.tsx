@@ -91,8 +91,8 @@ const Nav: FC = () => {
                     />
                     <Flex alignItems={'center'} pl={4}>
                         <NavLink to={'home'} onClose={onClose}>
-                            {/* <Box fontWeight={600}>Jason Wang</Box> */}
-                            <Text fontWeight={600}>Jason Wang</Text>
+                            {/* <Box fontWeight={600}>Justin Zhang</Box> */}
+                            <Text fontWeight={600}>Justin Zhang</Text>
                         </NavLink>
                     </Flex>
                     <HStack spacing={8} alignItems={'center'}>

@@ -1,73 +1,41 @@
 import { Badge } from '@chakra-ui/react'
 
 /**
- * JavaScript/TypeScript
- */
-
-export const ReactBadge = () => {
-    return <Badge colorScheme={'teal'}>ReactJS</Badge>
-}
-
-export const NextBadge = () => {
-    return <Badge colorScheme={'teal'}>NextJS</Badge>
-}
-
-export const NodeBadge = () => {
-    return <Badge colorScheme={'green'}>NodeJS</Badge>
-}
-
-export const TypescriptBadge = () => {
-    return <Badge colorScheme={'blue'}>Typescript</Badge>
-}
-
-/**
- * Python
+ * Badges
  */
 
 export const PythonBadge = () => {
     return <Badge colorScheme={'blue'}>Python</Badge>
 }
 
-export const FastAPIBadge = () => {
-    return <Badge colorScheme={'green'}>FastAPI</Badge>
+export const SolidworksBadge = () => {
+    return <Badge colorScheme={'teal'}>Solidworks</Badge>
 }
 
-export const DjangoBadge = () => {
-    return <Badge colorScheme={'green'}>Django</Badge>
+export const KiCadBadge = () => {
+    return <Badge colorScheme={'green'}>KiCad</Badge>
 }
 
-/**
- * Databases
- */
-
-export const MySQLBadge = () => {
-    return <Badge colorScheme={'orange'}>MySQL</Badge>
+export const ROSBadge = () => {
+    return <Badge colorScheme={'blue'}>ROS</Badge>
 }
 
-export const PostgreSQLBadge = () => {
-    return <Badge colorScheme={'blue'}>PostgreSQL</Badge>
+export const EmbeddedBadge = () => {
+    return <Badge colorScheme={'orange'}>Embedded</Badge>
 }
 
-export const PHPBadge = () => {
-    return <Badge colorScheme={'purple'}>PHP</Badge>
+export const GazeboBadge = () => {
+    return <Badge colorScheme={'purple'}>Gazebo</Badge>
 }
 
-export const FirebaseBadge = () => {
-    return <Badge colorScheme={'orange'}>Firebase</Badge>
+export const MLBadge = () => {
+    return <Badge colorScheme={'orange'}>ML</Badge>
 }
 
-export const MongoBadge = () => {
-    return <Badge colorScheme={'green'}>MongoDB</Badge>
+export const FFmpegBadge = () => {
+    return <Badge colorScheme={'green'}>FFmpeg</Badge>
 }
 
-/**
- * Other languages/technologies
- */
-
-export const JavaBadge = () => {
-    return <Badge colorScheme={'red'}>Java</Badge>
-}
-
-export const AssemblyBadge = () => {
-    return <Badge colorScheme={'orange'}>Assembly</Badge>
+export const MiditonesBadge = () => {
+    return <Badge colorScheme={'green'}>Miditones</Badge>
 }

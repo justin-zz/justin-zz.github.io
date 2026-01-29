@@ -40,10 +40,10 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👋🏼</Center>
                                     <Text>
-                                        Hi, I'm Jason and I'm a final year co-op
+                                        Hi, I'm Justin and I'm a master's
                                         student at the{' '}
                                         <b>University of Toronto</b> with a
-                                        passion for <b>Software Engineering</b>.
+                                        passion for <b>Robotics</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -51,13 +51,27 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>🎓</Center>
                                     <Text>
-                                        I'm pursuing an HBSc with a{' '}
+                                        I'm pursuing a MEng with a
+                                        {' '}
                                         <b>
-                                            Specialist in Computer Science (ASIP
-                                            co-op)
+                                            Master's of Engineering (MEng)
                                         </b>{' '}
-                                        and <b>Major in Cognitive Science</b>,
-                                        graduating class of 2026.
+                                        in
+                                        {' '}
+                                        <b>
+                                            Electrical and Computer Engineering
+                                        </b>{' '}
+                                        ,
+                                        graduating class of 2027. Graduated in 2025 with a 
+                                        {' '}
+                                        <b>
+                                            HBASc. in Mathematics and Computer Science
+                                        </b>{' '}
+                                         at the
+                                         {' '}
+                                        <b>
+                                            University of Ottawa
+                                        </b>{' '}
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -65,12 +79,8 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👨🏻‍💻</Center>
                                     <Text>
-                                        I have interned as a <b>Software Developer at theScore</b>, as well as a{' '}
-                                        <b>
-                                            Software Engineering Intern at
-                                            NerveX
-                                        </b>{' '}
-                                        working in full-stack development. I also have experience as a developer at various student organizations, including <b>UofT Blueprint, UTMIST,</b> and <b>UofT AI</b>.
+                                        I have experience as a software developer in <b>University of Ottawa</b>'s <b>Mars Rover Team (uORover)</b> where I was responsible for the robotic arm's competition-ready kinematics.
+                                        On my free time I like to indulge in my projects (see below).
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -78,13 +88,13 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>🚀</Center>
                                     <Text>
-                                        I'm experienced in full-stack web
+                                        I'm experienced in full-stack web and app
                                         development - particularly with{' '}
-                                        <b>Typescript</b> and <b>Python</b>.{' '}
+                                        <b>Typescript</b>, <b>Android Studio</b> and <b>Python</b>.{' '}
                                         <b>ReactJS/NextJS</b> is my frontend framework
                                         of choice and I've worked in backend
                                         with{' '}
-                                        <b>NodeJS, .NET Core, Java,</b> and <b>Python</b>.
+                                        <b>NodeJS, Java,</b> and <b>Python</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -92,27 +102,9 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>🧠</Center>
                                     <Text>
-                                        In addition to Software Engineering, I
+                                        In addition to Robotics, I
                                         am also interested in the confluence of
-                                        artificial intelligence and cognitive
-                                        science, as well as photography! Check
-                                        out my&nbsp;
-                                        <Link
-                                            href='https://photo.jasonfyw.com'
-                                            isExternal
-                                            fontWeight={'semibold'}
-                                            borderBottom={
-                                                '2px solid rgb(154, 228, 217)'
-                                            }
-                                            transition={'0.2s'}
-                                            _hover={{
-                                                textDecor: 'none',
-                                                opacity: 0.9,
-                                            }}
-                                        >
-                                            photography portfolio to learn more
-                                            about my creative work.
-                                        </Link>
+                                        artificial intelligence, bodybuilding and rock climbing!
                                     </Text>
                                 </Flex>
                             </Fade>

@@ -85,7 +85,7 @@ const ProjectCard: FC<ProjectCardProps> = props => {
                 <Text color={'gray.500'}>{props.description}</Text>
                 <Box>
                     <Link
-                        href={`#/projects/${props.id}`}
+                        href={`${props.id}`}
                         _hover={{
                             textDecor: 'none',
                         }}
@@ -93,13 +93,13 @@ const ProjectCard: FC<ProjectCardProps> = props => {
                         <Button
                             variant={'outline'}
                             colorScheme={'cyan'}
-                            aria-label={`Read more about ${props.name}`}
+                            aria-label={`Find out more about ${props.name}`}
                             fontSize={'1rem'}
                             size={'sm'}
                             pb={1}
                             mt={2}
                         >
-                            Read more
+                            Find out more
                         </Button>
                     </Link>
                 </Box>

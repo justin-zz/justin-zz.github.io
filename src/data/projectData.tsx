@@ -1,228 +1,149 @@
 import {
-    FirebaseBadge,
-    MongoBadge,
-    MySQLBadge,
     PythonBadge,
-    ReactBadge,
-    AssemblyBadge,
-    DjangoBadge,
-    TypescriptBadge,
-    NextBadge,
-    FastAPIBadge,
+    SolidworksBadge,
+    KiCadBadge,
+    ROSBadge,
+    EmbeddedBadge,
+    GazeboBadge,
+    MLBadge,
+    FFmpegBadge,
+    MiditonesBadge,
+    
 } from '../components/Projects/TechBadges'
-import { FiGithub, FiLink } from 'react-icons/fi'
+import { FiFileText, FiGithub, FiGitlab, FiLink, FiYoutube } from 'react-icons/fi'
 import { ProjectT } from './types'
 
 export const projectData: ProjectT[] = [
     {
-        name: 'FinQuest',
-        id: 'finquest',
-        type: 'Web app',
-        tagline: 'A financial education platform for Gen Z',
-        tags: [<NextBadge />, <TypescriptBadge />, <FastAPIBadge />],
-        imageSrc: '/finquest.png',
-        description:
-            'A gamified, AI-powered financial education platform for Gen Z featuring portfolio management with realtime financial data and interactive, personalized quizzes.',
-        links: [
-            {
-                link: 'https://github.com/dcsil/FinQuest',
-                icon: <FiGithub />,
-            },
-        ],
-        headerLink: 'https://github.com/dcsil/FinQuest',
-    },
-    {
-        name: 'PetPal',
-        id: 'petpal',
-        type: 'Web app',
-        tagline: 'A pet adoption platform for animal shelters',
-        tags: [<ReactBadge />, <DjangoBadge />, <MySQLBadge />],
-        imageSrc: '/petpal.png',
-        description:
-            'A pet adoption platform for animal shelters and prospective adopters featuring an admin dashboard, a customized application process, a REST API, and a frontend built with Tailwind.',
-        links: [
-            {
-                link: 'https://github.com/leowrites/PetPal/tree/main/P3',
-                icon: <FiGithub />,
-            },
-        ],
-        headerLink: 'https://github.com/leowrites/PetPal/tree/main/P3',
-    },
-    {
-        name: 'Street Savvy',
-        id: 'street-savvy',
-        type: 'Web app',
-        tagline: 'Suggests places to visit tailored using your preferences',
+        name: 'TG-001 (WIP)',
+        id: 'tg001',
+        type: 'Robot',
+        tagline: 'Tiniest budget-friendly fighter robot',
         tags: [
-            <ReactBadge />,
-            <TypescriptBadge />,
-            <FirebaseBadge />,
+            <SolidworksBadge />,
+            <KiCadBadge />,
+            <ROSBadge />,
+            <EmbeddedBadge />,
+        ],
+        imageSrc: '/tg001.png',
+        description:
+            'The soon-to-be tiniest budget-friendly and open-source robot. Intended to be a learning resource where anyone can get into robotics by building this robot! Read the devlog by clicking on the icon!',
+        links: [
+            {
+                link: 'https://www.notion.so/justin-portfolio/Robot-Development-Document-RDD-TG-001-Tiny-Gladiator-001-237687afd29480408cbad320aca8db6c?source=copy_link',
+                icon: <FiFileText />,
+            },
+        ],
+        headerLink: 'https://www.notion.so/justin-portfolio/Robot-Development-Document-RDD-TG-001-Tiny-Gladiator-001-237687afd29480408cbad320aca8db6c?source=copy_link',
+    },
+    {
+        name: 'Robotic Arm Kinematics',
+        id: 'kinematics',
+        type: 'Robot',
+        tagline: 'Software responsible for the robotic arm on the uOttawa Mars Rover',
+        tags: [
+            <ROSBadge />,
+            <EmbeddedBadge />,
+            <GazeboBadge />,
+        ],
+        imageSrc: '/kinematics.png',
+        description:
+            'The code that moves the uOttawa robotic arm to this day! Including open and close-loop (IK) control. Click the image to watch our System Acceptance Review (SAR) 2024 video!. See the "arm" and "robotic_arm_controls" folders in the repo for more information.',
+        links: [
+             {
+                 link: 'https://gitlab.com/uorover/rover_workspace/-/tree/ros2-testing/src?ref_type=heads',
+                 icon: <FiGitlab />,
+             },
+             {
+                 link: 'https://youtu.be/ddIS6PEXwSM?si=HLwoBB2i7nSUoOEm&t=200',
+                 icon: <FiYoutube />,
+            },
+         ],
+        headerLink: 'https://youtu.be/ddIS6PEXwSM?si=HLwoBB2i7nSUoOEm&t=200',
+    },
+    {
+        name: 'Robotic Arm Player (RAP)',
+        id: 'rap',
+        type: 'Robot',
+        tagline: 'Play your favorite music on a robotic arm',
+        tags: [
+            <ROSBadge />, 
+            <EmbeddedBadge />, 
+            <MLBadge />, 
+            <FFmpegBadge />, 
+            <MiditonesBadge />,
+        ],
+        imageSrc: '/rap.png',
+        description:
+            'Downloads audio from YouTube/Twitch and plays it on a robotic arm. Watch the cool video in the repo below!',
+        links: [
+            {
+                link: 'https://github.com/justin-zz/robotic-arm-player',
+                icon: <FiGithub />,
+            },
+        ],
+        headerLink: 'https://github.com/justin-zz/robotic-arm-player',
+    },
+    {
+        name: 'ESP32 Vision',
+        id: 'espvision',
+        type: 'Machine Learning',
+        tagline: 'Cutting-edge research allowing real-time depth perception on teeny tiny edge devices',
+        tags: [
             <PythonBadge />,
+            <EmbeddedBadge />,
+            <MLBadge />,
         ],
-        imageSrc: '/street-savvy.jpg',
+        imageSrc: '/espvision.jpg',
         description:
-            'A web app that suggests places to visit in Toronto based on your preferences using a custom recommendation engine and data from the Google Places API. Submitted to UofTHacks X.',
+            'A framework for deploying real-time depth perception on resource-constrained microcontrollers, specifically the ESP32-CAM with only 512KB RAM.',
         links: [
             {
-                link: 'https://github.com/jasonfyw/street-savvy',
+                link: 'https://github.com/justin-zz/AER1515-Project',
                 icon: <FiGithub />,
             },
         ],
-        headerLink: 'https://github.com/jasonfyw/street-savvy',
+        headerLink: 'https://github.com/justin-zz/AER1515-Project',
     },
     {
-        name: 'Twitter Geo-Sentiment',
-        id: 'twitter-geo-sentiment',
-        type: 'Web app',
-        tagline: 'Analyse and visualise regional sentiment on Twitter',
-        tags: [<PythonBadge />, <ReactBadge />, <MongoBadge />],
-        imageSrc: '/twitter-geo-sentiment.jpg',
+        name: 'Histopathology Image Classification with ABMIL',
+        id: 'histo',
+        type: 'Image Classification',
+        tagline: 'Classifies slide images by weighing patch importance',
+        tags: [
+            <PythonBadge />,
+            <MLBadge />,
+        ],
+        imageSrc: '/histo.jpg',
         description:
-            'A web tool allowing queries analysing and visualising regional sentiment towards given topics on Twitter during a specific time frame. A custom-trained Naive Bayes model is used to perform sentiment analysis on aggregated data.',
+            'This repository implements an Attention-Based Multiple Instance Learning (ABMIL) model for histopathology whole slide image (WSI) classification. The model processes image patches and aggregates them with attention mechanisms for slide-level predictions.',
         links: [
             {
-                link: 'https://github.com/jasonfyw/twitter-geo-sentiment',
+                link: 'https://github.com/justin-zz/ECE1512-Project-B',
                 icon: <FiGithub />,
             },
         ],
-        headerLink: 'https://github.com/jasonfyw/twitter-geo-sentiment',
+        headerLink: 'https://github.com/justin-zz/ECE1512-Project-B',
     },
     {
-        name: 'Fourier Series Animation',
-        id: 'fourier-series',
-        type: 'Web app',
+        name: 'Long-Sequence Model Optimization',
+        id: 'vlm',
+        type: 'Machine Learning',
         tagline:
-            'Demonstrating the Fourier series by approximating user-inputted line drawings',
-        tags: [<ReactBadge />, <TypescriptBadge />],
-        imageSrc: '/fourier-series.png',
-        description:
-            'An interactive React web app that demonstrates how an arbitrary user-inputted line drawing can be approximated using the Fourier series. Animations are rendered by the P5 library using efficiently implemented computations.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/fourier-series',
-                icon: <FiGithub />,
-            },
-            {
-                link: 'https://jasonfyw.com/fourier-series/',
-                icon: <FiLink />,
-            },
+            'Optimizing SSMs and VLMs via token pruning and architectural modifications',
+        tags: [
+            <PythonBadge />,
+            <MLBadge />,
         ],
-        headerLink: 'https://jasonfyw.com/fourier-series/',
-    },
-    {
-        name: 'Orbital Simulation',
-        id: 'orbital-sim',
-        type: 'Physics simulation',
-        tagline:
-            'A PyGame simulation accurately modelling planetary orbits in space',
-        tags: [<PythonBadge />],
-        imageSrc: '/orbital-sim.png',
+        imageSrc: '/vlm.png',
         description:
-            'An implementation of Newtonian physics in PyGame using positional data from the JPL Horizons database to simulate and record data on the past and future movements of celestial bodies in our solar system and beyond.',
+            'A comprehensive implementation for evaluating State Space Models (SSMs) and Vision-Language Models (VLMs) with token pruning and lossy-ness measurement. The project compares different architectures and analyzes the trade-offs between efficiency and information preservation.',
         links: [
             {
-                link: 'https://github.com/jasonfyw/orbital-sim',
+                link: 'https://github.com/justin-zz/ECE1512-Project-A',
                 icon: <FiGithub />,
             },
         ],
-        headerLink: 'https://github.com/jasonfyw/orbital-sim',
-    },
-    // {
-    //     name: 'PLISMUN',
-    //     id: 'plismun',
-    //     type: 'Website',
-    //     tagline: 'The official website for PLISMUN',
-    //     tags: [<PHPBadge />, <MySQLBadge />],
-    //     imageSrc: '/plismun.jpg',
-    //     description:
-    //         "A platform for my high school's annual international MUN conference, built from the ground up providing a delegate application system, admin tools, analytics, and resource hub. It managed hundreds of users from dozens of countries.",
-    //     links: [
-    //         {
-    //             link: 'https://github.com/jasonfyw/plismun',
-    //             icon: <FiGithub />,
-    //         },
-    //         {
-    //             link: 'https://plismun.com',
-    //             icon: <FiLink />,
-    //         },
-    //     ],
-    //     headerLink: 'https://plismun.com',
-    // },
-    {
-        name: 'Photography Portfolio',
-        id: 'photography-portfolio',
-        type: 'Website',
-        tagline: 'A portfolio website for my photography',
-        tags: [<ReactBadge />, <TypescriptBadge />],
-        imageSrc: '/photography-portfolio.png',
-        description:
-            'A portfolio website for my photography work, built with React and Typescript and styled with ChakraUI. Features a custom-built gallery, e-commerce functionality, and 3D map integration with Mapbox.',
-        links: [
-            {
-                link: 'https://photo.jasonfyw.com/',
-                icon: <FiLink />,
-            },
-        ],
-    },
-    // {
-    //     name: 'Linky',
-    //     id: 'linky',
-    //     type: 'Web app',
-    //     tagline: 'A modern, lightweight link shortener',
-    //     tags: [
-    //         <ReactBadge />,
-    //         <TypescriptBadge />,
-    //         <NodeBadge />,
-    //         <MongoBadge />,
-    //     ],
-    //     imageSrc: '/linky.png',
-    //     description:
-    //         'A lightweight and simple to use link shortener web app with a NodeJS REST API and a frontend built with ChakraUI. Features additional functions like QR codes and alternative URL formats.',
-    //     links: [
-    //         {
-    //             link: 'https://github.com/jasonfyw/linky',
-    //             icon: <FiGithub />,
-    //         },
-    //         {
-    //             link: 'https://lnky.to',
-    //             icon: <FiLink />,
-    //         },
-    //     ],
-    //     headerLink: 'https://lnky.to',
-    // },
-    // {
-    //     name: 'Blogging Application',
-    //     id: 'blogging-app',
-    //     type: 'Web app',
-    //     tagline:
-    //         'Java blogging application built using CLEAN architecture and SOLID principles',
-    //     tags: [<JavaBadge />],
-    //     imageSrc: '/blogging-app.jpg',
-    //     description:
-    //         'Our group project for CSC207 - a blogging website where users can post text content and follow other accounts. Designed and built according to CLEAN architecture and SOLID principles.',
-    //     links: [
-    //         {
-    //             link: 'https://github.com/jasonfyw/csc207-blogging-app',
-    //             icon: <FiGithub />,
-    //         },
-    //     ],
-    //     headerLink: 'https://github.com/jasonfyw/csc207-blogging-app',
-    // },
-    {
-        name: 'Breakout in MIPS',
-        id: 'breakout-asm',
-        type: 'Game',
-        tagline: 'Atari Breakout implemented in MIPS Assembly for CSC258',
-        tags: [<AssemblyBadge />],
-        imageSrc: '/breakout-asm.png',
-        description:
-            'Using MIPS Assembly to implement an Atari Breakout clone with features such as game controls, multiple lives, displaying score, and more.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/csc258-project',
-                icon: <FiGithub />,
-            },
-        ],
-        headerLink: 'https://github.com/jasonfyw/csc258-project',
+        headerLink: 'https://github.com/justin-zz/ECE1512-Project-A',
     },
 ]
